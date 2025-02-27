@@ -1,0 +1,118 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #111;
+    background-color: #FFFFFF;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1168px;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+/* -----Header------ */
+.logo-part {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: #111;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: #111;
+    padding: 28px 0;
+    margin-right: 4px;
+
+}
+
+.header-icon-chocolate {
+    fill: transparent;
+    stroke: #fd9222;
+}
+
+.navigation-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111;
+    padding: 28px 0;
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+}
+
+.navigation-item:focus,
+.navigation-item:hover {
+    cursor: pointer;
+    color: #fd9222;
+}
+
+/* ---------section 1----- */
+.main-page {
+    background-color: #1e1823;
+    padding: 381px 72px 40px 72px;
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url(../images/bk/bk-chocolate-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.title-menu {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #fff;
+    width: 484px;
+}
