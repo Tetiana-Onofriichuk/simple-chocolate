@@ -37,13 +37,17 @@ button {
 }
 
 .container {
-    width: 1200px;
+    width: 1168px;
     padding: 0 16px;
-   
     margin: 0 auto;
 }
 
 /* -----Header------ */
+.container{
+    width: 1168px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
 .logo-part {
     font-style: italic;
     font-weight: 700;
@@ -115,14 +119,16 @@ stroke: #111;
 /* ---------section 1----- */
 .main-page {
     background-color: #1e1823;
-    padding: 381px 72px 40px 72px;
+    padding-top: 381px;
+    padding-bottom: 40px;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-        url(../images/bk/bk-chocolate-desk.jpg);
+        url(../images/bk/chocolate-bk.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 40px;
-    max-width: 1200;
+    
+    max-width: 1200px;
     margin-bottom: 77px;
     margin-left: auto;
     margin-right: auto;
@@ -218,22 +224,26 @@ color:#fd9222;
 
 /* --------section 2-------- */
 
-.benefits{
 
-    padding:50px 34px;
-    background-color: #1e1823;
-    position: relative;
+.benefits{
+ background-color: #1e1823;
+ max-width: 1200px;
+ padding: 40px 50px;
+ margin: 0 auto;
+position: relative;
 }
+
 .benefits-icon-container{
 border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 365px;
-    width: 62px;
-    height: 62px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    margin-bottom: 22px;
+border-radius: 365px;
+width: 62px;
+height: 62px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 22px;
 }
+
 .benefits-icon{
     fill: #fd9222;
 }
