@@ -43,11 +43,7 @@ button {
 }
 
 /* -----Header------ */
-.container{
-    width: 1168px;
-    padding: 0 16px;
-    margin: 0 auto;
-}
+
 .logo-part {
     font-style: italic;
     font-weight: 700;
@@ -127,11 +123,11 @@ stroke: #111;
     background-position: center center;
     background-size: cover;
     border-radius: 40px;
-    
     max-width: 1200px;
     margin-bottom: 77px;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
 .title-menu {
@@ -186,12 +182,19 @@ color: #fd9222;
 background-color: #fff;
 }
 
+.btn-icon-scroll{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-left: auto;
+}
 .main-page-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.03em;
     color: #fff;
+    
 }
 
 .btn-scroll {
@@ -201,7 +204,8 @@ background-color: #fff;
     border-radius: 100%;
     fill: #fff;
     text-align: center;
-    margin-left: auto;
+    
+    
 }
 .icon-scroll{
     fill: #fd9222;
@@ -228,9 +232,9 @@ color:#fd9222;
 .benefits{
  background-color: #1e1823;
  max-width: 1200px;
- padding: 40px 50px;
- margin: 0 auto;
-position: relative;
+ padding: 50px 50px; 
+margin-left: auto;
+margin-right: auto;
 }
 
 .benefits-icon-container{
@@ -269,28 +273,176 @@ color: rgba(255, 255, 255, 0.7);}
     
 }
 .benefits-item{
+position: relative;
     flex-basis: calc((100% - 176px) / 3);
 }
 .benefits-item-one::after{
     display: block;
     content: "";
     border: 1px solid rgba(255, 255, 255, 0.5);
-        width: 0px;
-        height: 124px;
-    color: #fcf1e0;
-    position: absolute;
-    left: 376px;
-    top:110px;
-}
-
-.benefits-item-two::after{
-display: block;
-    content: "";
-    border: 1px solid rgba(255, 255, 255, 0.5);
     width: 0px;
     height: 124px;
     color: #fcf1e0;
     position: absolute;
-    left: 772px;
-    top: 110px;
+    left: 326px;
+   top: 60px;
 }
+
+.benefits-item-two::after{
+display: block;
+content: "";
+border: 1px solid rgba(255, 255, 255, 0.5);
+width: 0px;
+height: 124px;
+color: #fcf1e0;
+position: absolute;
+left: 326px;
+top: 60px;
+}
+
+/* --------section 3---------- */
+.ingredients{
+    padding: 100px 0px;
+}
+
+.ingredients-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111;
+    width: 411px;
+    text-align: center;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingredients-title-past { 
+    color:#fd9222;
+}
+
+.ingredients-paragraf {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #111;
+    width: 486px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.ingredients-list {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.ingredients-item {
+    flex-basis: calc((100% - 57px) / 4);
+}
+
+.ingredients-item-container {
+    padding: 28px 32px;
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+}
+.ingr-item-cont-one{
+background-color: #fd9222;
+}
+.ingr-item-cont-two{
+    border: 1px solid #fd9222;
+    background-color: #fff;
+}
+.ingr-item-cont-three{
+    background-color:#1e1823;
+}
+
+.ingredients-image {
+    margin-bottom: 36px;
+}
+
+.ingredients-image-paragraf-one{
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #fff;
+}
+
+.ingredients-image-paragraf-two{
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #111;
+}
+
+
+/* --------section 4-------- */
+.made {
+    padding: 100px 0;
+}
+
+.made-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    margin-bottom: 50px;
+}
+
+.made-title-part {
+        color: #fd9222;
+}
+
+.made-image-list {
+    display: flex;
+    gap: 20px;
+    flex-basis: calc((100% - 20px) / 2);
+}
+
+.made-recept {
+    padding: 32px;
+    border-radius: 15px;
+    width: 516px;
+    background-color: #fff;
+}
+
+.made-recept-title {
+    font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+        color: #111;
+        max-width: 350px;
+        margin-bottom: 28px; ;
+}
+
+.made-list {
+    list-style-type:disc;
+}
+.made-item:last-child{
+    margin-bottom: 0;
+}
+.made-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #111;
+    max-width: 436px;
+    margin-bottom: 24px;
+}
+
+
+/* ------section 5------- */
