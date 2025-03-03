@@ -37,8 +37,8 @@ button {
 }
 
 .container {
-    width: 1168px;
-    padding: 0 16px;
+    width: 1166px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 .visually-hidden {
@@ -128,8 +128,6 @@ stroke: #111;
 .main-page {
  
     background-color: #1e1823;
-    padding-top: 381px;
-    padding-bottom: 40px;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
         url(../images/bk/chocolate-bk.jpg);
     background-repeat: no-repeat;
@@ -137,10 +135,12 @@ stroke: #111;
     background-size: cover;
     border-radius: 40px;
     max-width: 1200px;
+    margin-bottom: 72px;
+    margin:0 auto;
     margin-bottom: 77px;
-    margin-left: auto;
-    margin-right: auto;
-   
+}
+.main-page-content{
+padding: 375px 40px 45px 40px;
 }
 
 .title-menu {
@@ -155,10 +155,11 @@ stroke: #111;
 .main-page-buttons {
     display: flex;
     align-items: center;
-    min-width: 1056px;
+    gap: 14px;
 }
 
 .btn-buy {
+    font-family: inherit;
 border-radius: 100px;
 padding: 14px 40px;
 min-width: 144px;
@@ -167,7 +168,7 @@ font-weight: 600;
 font-size: 14px;
 color: #fff;
 transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1);
-margin-right: 14px;
+
 }
 .btn-buy:focus,
 .btn-buy:hover{
@@ -175,79 +176,68 @@ background-color: #fcf1e0;
 color: #FD9222;
 }
 
-.btn-made {
+.link-made {
+font-weight: 600;
+font-size: 14px;
+    color: #fff;
     border: 1px solid #fff;
     border-radius: 100px;
     padding: 14px 40px;
-    min-width: 183px;
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 14px;
-    color: #fff;
+     background-color: transparent;
     transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 585px;
+    /* margin-right: 585px; */
         
 }
-.btn-made:focus,
-.btn-made:hover{
+.link-made:focus,
+.link-made:hover{
 border:1px solid #fd9222;
 color: #fd9222;
 background-color: #fff;
 }
 
-.btn-icon-scroll{
+
+.link-down{
+    color: #fafafa;
     display: flex;
-    gap: 14px;
     align-items: center;
-    margin-left: auto;
-}
-.main-page-link {
-    font-weight: 500;
+    gap: 14px;
     font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.03em;
-    color: #fff;
+font-weight: 500;
+line-height: 1.29;
+letter-spacing: -0.03em;
+margin-left: auto;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
-.btn-scroll {
-   
-    min-width:38px;
-    height: 38px;
-    border-radius: 100%;
-    fill: #fff;
-    text-align: center;
-    
-    
-}
-.icon-scroll{
-    fill: #fd9222;
+.scroll-down-icon-wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+background-color: #FFFFFF;
+fill: #fd9222;
+transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-page-link:focus,
-.main-page-link:hover{
-color:#fd9222;
+
+.link-down:focus .scroll-down-icon-wrapper,
+.link-down:hover .scroll-down-icon-wrapper{
+background-color: #fd9222;
+fill: #FFFFFF;
 }
 
-.btn-scroll:focus,
-.btn-scroll:hover{
- background-color: #fd9222;
-}
 
-.btn-scroll:focus >.icon-scroll,
-.btn-scroll:hover >.icon-scroll{
-    fill: #fff;
-}
 
 /* --------section 2-------- */
 
 
 .benefits{
- background-color: #1e1823;
- max-width: 1200px;
- padding: 50px 50px; 
-margin-left: auto;
-margin-right: auto;
+background-color: #1e1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .benefits-icon-container{
@@ -740,8 +730,8 @@ gap: 24px;
                 0,
                 0.2,
                 1);
-    /* opacity: 0;
-    pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
 }
 .modal-overlay.is-open {
     opacity: 1;
